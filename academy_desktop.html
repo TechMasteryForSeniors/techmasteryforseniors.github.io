@@ -1,207 +1,963 @@
-<html>
-    <head>
-        <!--Title-->
-        <title>Tech Mastery For Seniors Academy</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS3EW1D4Z1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS3EW1D4Z1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-DS3EW1D4Z1');
-        </script>
-        <script>
-            let details = navigator.userAgent 
-            let regexp = /android|iphone|kindle|ipad/i;
-            let isMobileDevice = regexp.test(details)
-        </script>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-            .container {
-                max-width: 960px;
-                margin: 0 auto;
-                padding: 1px;
-                display: flex;
-                align-items: center;
-                justify-content: center
-            }
-            header {
-                background-color: #000;
-                color: #fff;
-                text-align: center;
-                padding: 1px 0;
-            }
-            .text {
-                font-size: 10px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+    gtag('config', 'G-DS3EW1D4Z1');
+  </script>
+  <script>
+    let details = navigator.userAgent 
+    let regexp = /android|iphone|kindle|ipad/i;
+   
+    
+    
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Mastery For Seniors Academy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1px 0;
+    }
 
-            img {
-                max-width: 30px;
-                max-height:30px;
-                color: #fff;
-            }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
 
-            .line{
-                max-width: 100%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 4px;
-                background-color: red;
-            }
+    .line{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4px;
+        background-color: red;
+    }
 
-            .highlight{
-                background-color: #FFFF3A;
-                color: #000;
-                padding: 6px;
-                font-size: 24px;
-                margin-top: 12px;
-            }
+    .cta{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        background-color: red;
+        border-radius: 10px;
+    }
+    
+    img {
+      max-width: 20px;
+      max-height:20px;
+    }
 
-            .headline{
-                text-align: center;
-                font-size: 40px;
-                padding-top: 0px;
-                margin: 1px;
-                padding-bottom: 24px;
-            }
+    .text {
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-            .videoDesc{
-                background-color: red;
-                width: 60%;
-                height: 8%;
-                margin: 0 auto;
-                display:block;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-            }
-            .videoContainer{
-                max-width: 960px;
-                margin: 0 auto;
-                padding: 1px;
-                display: flex;
-                align-items: center;
-                justify-content: left;
-            }
-            .video{
-                height: 340px;
-                width: 60%;
-                background-color: #000;
-                margin: 0 auto;
-                display: block;
-            }
-            .tester{
-                margin: 0;
-                padding-left: 5%;
-                color: white;
-                font-size: 12px;
-            }
+    .highlight{
+        background-color: #FFFF3A;
+        color: #000;
+        padding: 6px;
+        margin-top: 12px;
+    }
+    
+    .headline{
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        padding-top: 0px;
+        margin: 1px;
+        padding-bottom: 2px;
+    }
 
-            .image{
-                max-width: 80px;
-                max-height: 80px;
-            }
+    .videoContainer{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
 
-            .cta{
-                width: 60%;
-                height: 10%;
-                margin-top: 20px;
-                font-size: 30px;
-                margin-left: 20%;
-                margin-right: 20%;
-                border-color: #00303F;
-                background-color: red;
-                border: none;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
-            
-            .ctaContainer{
-                max-width: 960px;
-                margin: 0 auto;
-                padding: 1px;
-                display: flex;
-                align-items: center;
-                justify-content: left;
-            }
+    .videoDesc{
+        background-color: red;
+        width: 90%;
+        height: 2%;
+        margin: 0 auto;
+        display:block;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
 
-            .ctaImg {
-                max-width: 200px;
-                max-height:400px;
-            }
+    .tester{
+        margin: 0;
+        padding: 2px;
+        color: white;
+        font-size: 8px;
+    }
 
-        </style>
-    </head>
-    <body>
-        <!--Start hook-->
-        <header>
-            <div class="container">
-                <div class="text">
-                  <h1>Tech Mastery For Seniors</h1>
-                </div>
-                <div class="image">
-                  <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
-                  <img src="desk.png">
-                </div>
+    .video{
+        text-align: center;
+        margin: 0 auto;
+        display:block;
+    }
+
+    .spacer{
+        height: 2vh;
+    }
+    .ctaContainer{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1px;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+    .ctaImg {
+      max-width: 40px;
+      max-height:120px;
+    }
+
+    /* Add additional CSS styles for your website content here */
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="text">
+          <h1>Tech Mastery For Seniors</h1>
+        </div>
+        <div class="image">
+          <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+          <img src="desk.png">
+        </div>
+      </div>
+  </header>
+  <div class="line"></div>
+    <div class="container">
+    <!-- Your website content goes here -->
+        <p class="highlight">discover the NEW "Tech Master" Certificate</p>
+    </div>
+    <p class="headline">
+      "Do You Love Your Grandchildren <br>More Than You Hate Technology?"
+    </p>
+    <div class="spacer"></div>    
+    <img width="40%" height="40%" style="margin-bottom:32px" src="assets/certificate.png" >
+
+    <!--<div class="videoDesc">
+      <div class="videoContainer">
+          <div class="image">
+              <img src="speaker.png"style="padding: 8px">
             </div>
-        </header>
-        <div class="line"></div>
-        <div class="container">
-            <!-- Your website content goes here -->
-            <p class="highlight">Discover the NEW</p>
+          <div class="tester">
+            <h4>Listen to learn about the certificate</h4>
+          </div>
         </div>
-        <p class="headline">
-            “Tech Mastery For Seniors Academy”<br>
-            <span style="font-size: 32px;">
-                For Seniors who struggle with technology
-                And want to learn how to master technology
-            </span>
-        </p>
-        <!--End hook-->
-        <!--Watch text-->
-        <div class="videoDesc">
-            <div class="videoContainer">
-                <div class="image">
-                    <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
-                    <img src="speaker.png"style="padding-left: 20px">
-                  </div>
-                <div class="tester">
-                  <h1>Listen to learn about the academy</h1>
-                </div>
+    </div>
+    <video class="video" controls width = "90%" height="200px"frameBorder="0" allow="fullscreen" 
+    allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        src="https://www.youtube.com/embed/LJ-Uteo2H5w">
+    </video>-->
+    <div class="spacer"></div>
+    <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+      <div class="cta">
+        <div class="ctaContainer">
+            <div class="ctaImg">
+                <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                <img src="cart.png"style="padding: 8px; width=50%" >
               </div>
+            <div class="tester">
+              <h1>YES! I WANT TO EARN MY<br>
+                  <strong>"TECH MASTER" </strong>CERTIFICATE
+              </h1>
+            </div>
         </div>
-        <!--YouTube video-->
-        <iframe frameBorder="0" controls class="video"
-            src="https://www.youtube.com/embed/LJ-Uteo2H5w">
-        </iframe>
-        <!--CTA for stripe-->
-        <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" ">
+      </div>
+    </a>
+  
+    <div style="width: 90%; margin-left: auto; margin-right: auto;">
+        <p style="text-align: start;">
+          Are you a grandparent?<br>
+          Do you love your grandchildren?<br><br>
+  
+          If you answered yes, then <u>you</u> must continue reading<br><br>
+          You know that technology is constantly changing and you often feel left behind…<br><br>
+
+          Which has led you to feel frustrated and sometimes leaves you with the desire to break your technology…<br><br>
+
+          They tell you that technology makes things easier, faster and better and you haven’t found that to be true<br><br> 
+
+          Corporations and governments keep adding more technology to everything<br><br>
+          Its like they are trying to get rid of human beings<br><br>
+
+          Would you like to know why?<br>
+          That’s because it saves them a whole lot of money<br><br>
+
+          They don’t mind investing millions in the latest gizmo to save money yet they’re not investing in YOU<br><br>
+
+          They never show you how to actually work these new “improvements”<br>
+          Unfortunately they don’t care, they expect you to just figure it out all on your own <br><br>
+
+          It's like being told that driving to a store that is 4 miles away is “easier and faster” than walking, which is true, the problem is…<br><br>
+
+          <span><p style="font-weight: bold; text-align: center;">You Weren’t Taught How To Drive</p></span><br><br>
+
+          No only will that mode of transportation not be “easier and faster” than walking...<br><br>
+
+          You are also risking your life and the life of others<br><br> 
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
             <div class="cta">
               <div class="ctaContainer">
                   <div class="ctaImg">
                       <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
-                      <img src="cart.png">
+                      <img src="cart.png"style="padding: 8px; width=50%" >
                     </div>
                   <div class="tester">
-                    <h1 style="text-align: left; align-self: center;">YES! I WANT TO JOIN THE ACADEMY<br>
-                        for <strong>only </strong>$397
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          The average american is spending 4 hours a day on their cellphones and that number is even higher for those between the ages of 10 to 24 <br><br>
+
+          Some kids are spending 12 hours on their devices a day<br>
+          12 HOURS A DAY...that’s a lot!<br><br>
+
+          There’s a lot of good on the internet…<br><br>
+
+          The biggest one…children now, have access to most of human knowledge at their fingertips<br><br> 
+
+          They can stay connected to their whomever wherever they may be on the planet<br>
+          They can stay connected to you, if you learn technology…<br><br>
+
+          Problem is…<br><br>
+
+          <span><p style="font-weight: bold;">There’s also a lot of evil on the internet…</p></span>
+          <ul>
+            <li>
+              <span style="background-color: #FFFF3A;">Reddit, a website that your grandchild visits for four hours a day, is full of children telling
+                other children what to do.</span> The average person on Reddit is below the age of 22. <br>
+              Those are the people that are influencing your grandkids. <br>
+              People that barely have any life experiences. It’s like bringing your grandkids<br>
+              to a school where all the teachers are between the ages of 16-20, with a principal that is 22. <br>
+              How well do you think they will turn out?
+            </li>
+            <li>
+              <span style="background-color: #FFFF3A;">Anti-Capitalism, Pro-Communist propaganda is rampant on the internet. </span>
+              There’s a lot of people creating memes that are being shared across the internet on how communism is somehow “good.” The form of government that has killed millions and left many more in poverty. 
+            </li>
+            <li>
+              <span style="background-color: #FFFF3A;">Suicide rates have gone up in children and young adults. </span>
+              Suicide rates have gone up in children and young adults. From 2011 to 2021 13% of highschool girls 
+              have attempted suicide and 30% have strongly considered it. That’s the epidemic following our youth.
+               Many girls are spending a lot of time on social media comparing themselves to others feeling 
+               like they aren't good. Overall teens are suffering.  
+            </li>
+            <li>
+              <span style="background-color: #FFFF3A;">The Rise Of Liberalism.</span>
+              On the internet conservatism hardly exists. The few places that it exists, liberals are trying to bury it. There are multiple ways they do that. The first by simply screaming as loud as possible. The second by suppressing the voice of conservatives. The third, and maybe their favorite way, vilifying conservatives. They want to take away the principles that you wish to instill on your family. 
+            </li>
+            <li>
+              <span style="background-color: #FFFF3A;">LGBT+ Influence is rampant.</span>
+              It's being celebrated all over the internet. Which would have been fine, 
+              if they did not make people that weren’t part of the LGBT+ feel guilty for being themselves, 
+              or trying to make everyone feel like they might be gay or trans. In highschool, 
+              my friend’s sister decided that she was now a boy. My friend told me that it was 
+              just a phase that she was going through because of the influence of the internet. 
+              At the time I wanted to be supportive and referred to her as “he.” 
+              Turns out my friend was right. It was only happening because of the people on the internet. 
+              She was back to being a girl just a few months later. 
+            </li>
+          </ul>
+          
+          
+           
+          
+
+          Those are only some of the battles that your grandchildren are facing whenever you see their noses in their phones and computers<br><br>
+
+          The problem is...<br><br>
+
+          You can't stop them from using technology…<br><br>
+
+          That's where the world is headed. It's how they do their school work, that's how they learn now, they just need you there with them…<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          Remember when they were younger, they needed supervision to cross the street so that they wouldn't get hit by a car…<br><br>
+
+          They still need you… maybe even more now<br><br>
+
+          Right now they are walking head down straight into the digital highway that has data going over 200 MBP per second…<br><br>
+
+          They are walking head down because they don't understand the dangers…<br><br>
+
+          while their seeing grandparent is simply watching them walk right into the busy traffic without even moving a finger<br><br>
+
+          That’s unfortunately what was happening before…You were blind<br>
+          Now you know…and thankfully you can help them now…<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          In fact,<br>
+          Over 64% of children with suicidal thoughts said family saved them<br><br>
+
+          Nowadays most children are being raised in a home with two working parents<br>
+          That means your grandchildren really really need you to be there for them…<br><br>
+
+          How can you be there for them if you don’t learn technology?<br>
+          and...<br><br>
+
+          You may be their only hope<br>
+          You are retired now…<br>
+          You have the time and besides there are times you kinda need something to do...<br><br>
+
+          Even though a lot of things have changed because of technology<br><br>
+
+          One thing that has stayed the same…<br>
+          Your family always needing you<br><br>
+
+          Your grandchildren need your help…just like their parents needed your help<br>
+          Only this time…your grandchildren are facing a harder world<br><br> 
+
+          You need to master technology so that you can be there for them<br>
+          And with the “Tech Master” Certificate you can do just that...<br><br>
+
+          You will learn to master technology and you will also receive a lot of…<br><br>
+
+          BONUSES:<br>
+          You will get a stylus for your phone<br>
+          (VALUE of $20)<br>
+          You will get a notebook + pen to keep your notes<br>
+          (VALUE of $20)<br>
+          You will get our “Strangest Secret To Tech Mastery” Seminar<br>
+          (VALUE of $47)<br>
+          You will get our “How To Build Your Own Website” course<br>			
+          (VALUE of $1,997)<br>	
+          You will get a reMarkable 2 Paper Tablet - The Best Way To Write Notes<br>
+          (VALUE of $629)<br><br>	      	
+
+          Yes!<br>
+          You will get over $2,629 of VALUE for FREE when you accept to earn your<br>
+          “Tech Master” Certificate<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          You may think…<br>
+          “I can’t do it”<br><br>
+
+          Either because you think you are too “old” or because you don’t want to break anything<br><br>
+
+          There’s some good news for you…<br>
+          You being “old” is actually an advantage that your grandchildren do not have<br><br>
+
+          You may think that kids are naturally good at technology, they are not. They are simply not scared of breaking whatever is in front of them to get what they want…<br><br>
+
+          Your Grandchildren Learn Technology The Expensive Way<br><br>
+
+          If your grandchild wants to use YouTube, they will click any and all buttons on the computer until they either A) find YouTube or B) break the computer<br><br>
+
+          It’s not their fault, they’re young, they don't always know how to communicate<br><br>
+
+          they’re not patient and for those young enough… they don't even know how to read!<br><br>
+
+          You on the other hand know how to communicate your desires, you know how to be patient (life forced that lesson unto you) and you know how to read<br><br>
+
+          You have those advantages, you just underestimate them and overestimate the youth’s ability to get what they want by impatiently smashing any and all buttons until they get it right or destroy it in the pursuit<br><br> 
+
+          You will be able to get what you want out of technology and even outperform 99% of the world in technology..<br><br>
+
+          You just need a teacher to guide you along the way and practice…<br>
+          That’s why the “Tech Master” Certificate was created for you<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          You will have a teacher who is a software engineer and who has invested more than two decades learning technology teaching you…<br><br>
+
+          With the “Tech Master” Certificate you get the shortcut to being a tech master without having to spend two decades learning on your own…<br><br>
+
+          Let’s face it, 20 years is a long time, and if you want the benefit of those years of experience without spending them, register and earn your “Tech Master” Certificate…<br><br>
+
+          You will learn quickly with our three foundations of mastering technology<br><br>
+
+          The first foundation is our…<br>
+          “Master The Basics Of Technology” Masterclasses<br>
+          You will learn the core features of your cell phone, your computer, the internet, and general technology in an environment of like minded individuals…<br><br>
+
+          You know that the best way to learn is to learn with others…<br>
+          It creates comradeship, accountability, and competitiveness being around others<br><br> 
+
+          The classes are short, in fact…<br><br>
+
+          You only have to attend one class per month<br>
+          The classes are hosted in great locations like…<br><br>
+
+          the Ritz-Carlton, Sugden Theater, Inn On Fifth, Bellasera and others…<br><br>
+
+          Not only are you learning in beautiful environments, you will also have fantastically delicious meals provided to you<br><br>
+
+          And…<br><br>
+
+          Transportation is provided for you<br>
+          We will drive you to class, and drive you back home*<br><br> 
+
+          *If you’re out of town you will receive a complimentary hotel room<br><br>
+
+          That’s right, everything is handled for you to have a pleasant learning experience<br><br> 
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>             
+
+          If you need more practice with specific topics, you get access to weekly virtual classes<br> 
+          That makes it convenient for you to practice…after all…practice makes perfect<br><br> 
+
+          You will learn the basics of technology in a pleasant atmosphere, weekly virtual classes that are convenient for you for practice, meals and transportation provided for you, housing if needed, and you will also have the opportunity to network with like minded individuals…<br><br>
+
+          It’s a total value of over $100K…plus you get…<br><br>
+
+          The second foundation, our…<br><br>
+
+          “Outmaster 99% Of The World In Technology” Masterclasses<br><br>
+
+          Nearly 100% of the world is touched by technology<br> 
+          Facebook, a single app, has 3 Billion users…<br><br>
+
+          That’s a really BIG app<br>
+          Imagine being able to impact more than a third of the world, everyday…<br><br> 
+
+          That’s what technology can do for you<br>
+          so you can reach your highest purpose…<br><br>
+
+          Do you want to help more people?<br>
+          Do you want to share your knowledge?<br><br>
+
+          Having the skill of being able to code your own tech tool is the highest leverage skill you can have in this decade…<br><br>
+
+          It’s actually a very exclusive skill…<br>
+          Less than 1% of the world owns this skill<br><br> 
+
+          Do you want to know why so few people know it?<br>
+          Its because people make it seem hard…<br><br>
+
+          It’s actually easy…<br>
+          it just requires you to learn the basic by using a structured curriculum<br>
+          Practice and persistence<br><br>
+
+          You have two ways to learn with a structure curriculum:<br> 
+          Going to college, or earning your “Tech Master” Certificate<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          Can you imagine how annoying it would be to have a roommate…
+          A college freshman tasting freedom for the first time 
+
+          Their first taste of freedom is the start of your hell
+          Your roommate goes to sleep at 2 a.m. and alway has friends over
+
+          Everyday you have the hear the screeching that your roommate calls music<br>
+          Sleeping on the stiff bottom bunker…<br><br>
+
+          Which your roommate was at least kind enough to volunteer it to you<br>
+          You didn’t want to be the senior who fell off a top bunker in a college dorm<br><br>
+
+          That would be…embarrassing and…dangerous<br><br>
+
+          Your roommate isn’t a bad person, so when asked<br>
+          “Can we increase the temperature? I can’t sleep at the current temperature”<br><br>
+
+          You answered…"yes"<br><br>
+
+          That yes sealed your fate…<br>
+          Now you wake up in sweat…every night<br><br>
+
+          Doesn’t sound fun, right?<br><br>
+
+          Not only is not fun, it is costly<br>
+          Learning the traditional way takes way too much time and costs you, well your lifestyle<br><br>
+
+          College will cost you 4 years of your life studying and...<br>
+          it Will cost you over $100,000 to downgrade your lifestyle for those 4 years<br><br>
+
+          College takes too much time, and decreases your quality of life<br><br>
+
+          Instead by joining our certificate program, you will learn the skill not in 4 years…<br>
+          you will learn it in 4 months…<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          And you will be in an environment of like minded people that believes in…<br>
+          Lifelong learning, getting better everyday, family, and America<br><br>
+
+          You will save you over 4 years of learning…<br>
+          You will have an exclusive high leverage skill…<br>
+          You will increase your quality of life…<br><br>
+
+          A total value of $173,000 plus…<br><br>
+
+          You also get access to our…<br>
+          “Billion Dollar App” mastermind<br>
+          Monthly mastermind days<br>
+          Open Q&A sessions with experts in the tech world <br><br>
+
+          for 12 months…a total of value of $120,000 for FREE<br><br>
+
+          You will get access to the<br>
+          “Master The BasicMaster” Masterclasses”( value of $100K)<br>  
+          “Outmaster 99% of the world in technology”( value of $173K)<br>
+          The “Billion Dollar App” Mastermind (value of $120,00)<br><br>
+
+          Not only that,you will also get access to our…<br><br>
+
+          “24 Hours, 5 Days A Week Always Human” Concierge I.T. Support<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          Although you are learning and are on track to being better at technology than 99% of the world and even be better than your teacher!<br> 
+
+          You will hit roadblocks on your journey…<br><br> 
+
+          You may accidentally erase your OS during a system update<br>
+          and the email that you have to send to close a deal…cannot be sent…<br><br>
+
+          It’s a scary and extremely frustrating situation to be in<br>
+          That’s when you would need to call-in…<br><br>
+
+          you get to have your problem fixed without…<br>
+          feeling like bashing your computer against the wall…<br><br>
+
+          Yes, you will always have a human answer your call<br>
+          Our I.T. helpdesk team consists of human phone representatives to help you…<br><br>
+
+          You won’t get stuck in telephone hell where<br> 
+          You have to speak to a robot that makes things more confusing or...<br> 
+          A person that doesn’t understand you…<br><br>
+
+          you will instead hear a human voice greeting you…that you understand…<br>
+          And who understands you…to help with your emergency<br><br> 
+
+          Plus you get access to our bi-weekly in-person group I.T. help at the Collier County Headquarters Branch on Orange Blossom Drive in Naples for hands-on practice…<br><br>
+
+          A total VALUE of $93,312<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          Warning:<br>
+          Our program is for you to learn…We will help you when you need it<br>
+          However, you cannot use our I.T. team as your personal assistants<br><br>
+
+          We are to help you fix problems, that either you tried to fix yourself or problems you have no idea where to get started…<br><br>
+
+          If you use our team as personal assistants…without ever trying<br> 
+          you will be removed from the program<br><br>
+
+          Because you do not want to learn<br>
+          If you however want to learn, and like having help just in case…get the<br> 
+
+          <snap>
+            <p style="text-align: center; font-weight: bold;">
+              “Tech Master” Certificate
+            </p>
+          </snap>
+
+          You will go from confusion with using technology to knowing…<br>
+          the highest leverage skill of this generation…<br><br> 
+
+          A skillset that less than 1% of the world<br>
+          Yet affects 99.9% of the world…<br><br>
+
+          The “Tech Master” Certificate is your ideal learning environment<br><br>
+
+          You get access to…<br><br>
+          <ul>
+            <li>
+              “How To Master The Basics” Masterclasses <br>(value of $100K)
+              <ul>
+                <li>
+                  You will know how to actually use your phone
+                </li>
+                <li>
+                  You will know how to actually use your computer 
+
+                </li>
+                <li>
+                  You will know how to actually use your internet
+                </li>
+              </ul>
+            </li>
+            <li>
+              “Outmaster 99% of the world in tech" Masterclasses<br> (value of $173K)
+              <ul>
+                <li>
+                  You will know how to actually reach the world 
+                </li>
+                <li>
+                  You will know how to actually influence the world
+                </li>
+                <li>
+                  You will know how to actually build the world 
+                </li>
+              </ul>
+            </li>
+            <li>
+              “24 Hours, 5 Days A Week Always Human” <br>Concierge I.T. Support 
+              (value of $98K)
+              <ul>
+                <li>
+                  Always have a human on the phone
+                </li>
+                <li>
+                  Always have a ready I.T. team 
+                </li>
+              </ul>
+            </li>
+          </ul>
+         
+       
+          Plus Bonus:
+          <ul>
+            <li>
+              The “Billion Dollar App” Mastermind<br> (value of $120,00)
+              <ul>
+                <li>
+                  Monthly in-person mastermind meetings
+                </li>
+                <li>
+                  Experts In Their Field Lectures
+                </li>
+              </ul>
+            </li> 
+            <li>
+              “How To Legally Print Money At Home” Course <br>(value of $1,997)
+              <ul>
+                <li>
+                  How to build your own money printer
+                </li>
+                <li>
+                  How to use your money printer
+                </li>
+              </ul>
+            </li>
+          </ul>
+        <br>
+
+          A Total Value of $492,997 for only $33,997<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a><br>
+
+          You may be asking… “Why is it only $33,997?”<br>	
+          Well, I have to come clean with you…<br><br>	
+
+          The program is not perfect…<br><br>
+
+          Our first flaw…<br>
+          Our masterclasses only take place in Naples, FL<br><br>
+
+          Our solution...<br> 
+          Provide you a hotel, transportation, and food<br><br>
+
+          Our second flaw…<br>
+          This certificate is new so there will be some hiccups<br><br> 
+
+          Our solution…<br>
+          You get a 100% Money Back Guarantee with our…<br>
+          “I applied the principles, and I did not see results”<br><br> 	
+
+          If you learn, use, and practice the principles and don’t the results<br> 
+          You get your $33,997 back and you get to keep over $2,000 worth of bonuses<br><br>
+          
+
+          *you don’t get access to the “Billion Dollar App” Mastermind (value of $120,000)<br><br>			 	 
+          Ask yourself this question…<br><br>
+
+          <span>
+            <p style="font-weight: bold; text-align: center;">
+              “Is my grandchildren’s lives worth investing only a couple hours a
+              month and $33,997 to learn technology?”
+            </p>
+          </span>
+
+          If you answered yes…<br>
+          Then you <u>must</u> get your ticket for the “Tech Master” Certificate<br>
+          So that you can protect your grandchildren…<br><br>
+
+          We only have 30 spots<br>
+          So don’t waste time in claiming your ticket, you might not be able to get a seat later…<br>
+          you wouldn't want your grandchildren to suffer from your procrastination<br><br>
+
+          To claim your ticket all you have to do is…<br>
+          <ul>
+            <li style="list-style-type: decimal;">
+              Click on “Yes, I want to earn my ‘Tech Master’ Certificate” button<br>
+            </li>
+            <li style="list-style-type: decimal;">
+              Enter your name, email, cell phone number, and address<br>
+            </li>
+            <li style="list-style-type: decimal;">
+              Pay your sign up fee with a wire transfer<br>
+            </li>
+          </ul>
+
+          IMPORTANT:<br>
+          Do not register if you don’t have the desire to learn…and want to take advantage of the concierge IT help. We will cancel your subscription, and we will give you a full refund<br><br>
+
+          We only have 30 spots currently available, so only those who actually care about learning, their family, and America should join<br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
                     </h1>
                   </div>
               </div>
             </div>
           </a>
+
+          <span><p style="font-weight: bold; text-align: center; width: 100%; font-size: 16px;">What Are Others Already Saying About Working With Me?</p></span><br>
+
+          “What a joy to meet Kepler Siguineau for training and tech support on smart devices. There is so much to learn, but he makes it easy and fun. With a wonderful personable demeanor, he is very easy to understand in learning the latest technology. Kepler stays up to date on the everchanging, expanding technology and brings it down to my level for comprehension. I highly recommend Kepler training and tech support.”<br><br>
+
+          “I asked for assistance in understanding several features on my Apple phone & was happy with Kepler's support ”<br><br>
+
+          “Kepler was very patient & helpful in my purchase of new iPhone & iPad on 7/3 & on 7/5 helping me set up contacts & how to use it”<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none; ">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a>
+        <em><br>
+          <strong>P.S.</strong><br> Do you love your grandchildren?<br> 
+          Do they spend time on the internet?<br> 
+          Do they spend a LOT of time on the internet?<br> <br> 
+          
+          Do you care about their safety?<br> 
+          If you answered yes, I must share this with you…<br> <br> 
+          
+          Your grandchildren need you online…most teens said family saved them from suicide…<br> 
+          Although technology has increased opportunity in the United States…<br> 
+          It's also created problems great problems in our society<br> <br> 
+          
+          “From 2011 to 2021, 13% of highschool girls have attempted suicide and 30% have strongly considered it”<br> <br> 
+          
+          Do you currently struggle with technology? <br>
+          Are you tired of feeling frustrated?<br>  
+          Do you want to learn to master technology?<br>  
+          Do you love your grandchildren?<br> <br> 
+          then earn your “Tech Master” certificate With Only 30 spots available. You must act now, you can’t procrastinate, your grandchildren's future is at stake.<br><br>
+          <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none;">
+            <div class="cta">
+              <div class="ctaContainer">
+                  <div class="ctaImg">
+                      <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                      <img src="cart.png"style="padding: 8px; width=50%" >
+                    </div>
+                  <div class="tester">
+                    <h1>YES! I WANT TO EARN MY<br>
+                        <strong>"TECH MASTER" </strong>CERTIFICATE
+                    </h1>
+                  </div>
+              </div>
+            </div>
+          </a>
+        </em>
         <br>
-    </body>  
+        <em style="padding-top: 12px;">
+          <strong>P.P.S.</strong><br>
+
+          You also get our “I Applied The Principles And Did Not Get Results” Guarantee.<br>
+          That means if you went through the program, applied the principles and you did not receive results<br>
+          you will get a full refund and get to keep over $2,000 worth of bonuses for FREE.<br><br>
+        </em>
+        <a href="https://buy.stripe.com/5kA5oegTr4stdY47sV" style="text-decoration: none;">
+          <div class="cta">
+            <div class="ctaContainer">
+                <div class="ctaImg">
+                    <!--<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">-->
+                    <img src="cart.png"style="padding: 8px; width=50%" >
+                  </div>
+                <div class="tester">
+                  <h1>YES! I WANT TO EARN MY<br>
+                      <strong>"TECH MASTER" </strong>CERTIFICATE
+                  </h1>
+                </div>
+            </div>
+          </div>
+        </a>
+    </p>
+    </div>
+    <div class="spacer"></div>
+  </body>
 </html>

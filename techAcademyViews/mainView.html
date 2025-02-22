@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Mastery For Seniors Academy</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+        <style>
+            /* General reset and basic styles */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #F0F1F3;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 10px 0;
+                box-sizing: border-box; /* Ensure padding is accounted for in the width */
+
+            }
+            .fab {
+                position: fixed;
+                bottom: 20px; /* Adjust as needed */
+                right: 50px;
+                background-color: #2ABF5B;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+                font-size: 24px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transform: translateX(50%);
+            }
+            /* Styling for icons in the bottom navigation bar */
+            /*footer{
+                background-color: white;
+
+            }* original footer that worked/
+
+            
+            /*footer nav {
+                display: flex;
+                justify-content: space-around;
+            
+            }*/
+
+            footer{
+                margin: 0;
+                padding: 10px 0;
+                width: 100%;
+            }
+            footer nav{
+                display: none;
+                justify-content: space-evenly; /* Distribute space between items */
+                
+            }
+            footer nav a {
+                text-decoration: none;
+                color: #333;
+            }
+            footer nav a:hover {
+                color: #007bff;
+            }
+
+            .card-container {
+                display: flex;
+                width: 90%;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            .card {
+                width: 45%;
+                margin: 10px;
+                background-color: white;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+            .card-content {
+                padding: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .card {
+                    width: 100%;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div style="padding-bottom: 58px;" >
+            <div style="display: inline;" id="homeView" style="height: 100vh; width: 100%; ">
+                <iframe src="homeView.html" style="height: 100vh; width: 100%;"></iframe>
+            </div>
+            <div style="display: none;"  id="educationView"  style="height: 100vh;  width: 100%;">
+                <iframe src="educationView.html" style="height: 100vh; width: 100%;"></iframe>
+            </div>
+            <div  style="display: none;"  id="chatView" style="height: 100vh;  width: 100%;">
+                <iframe src="chatView.html" style="height: 100vh; width: 100%;"></iframe>
+            </div>
+        </div>
+        <footer >
+            <nav id="firstNav" >
+                <a href="#"><img id="homeBtn" src="assets/house.svg" height="24px" width="24px" onclick="changeTo(0)"></a>            
+                <a href="#"><img id="educationBtn" src="assets/graduation.svg" height="24px" width="24px"  onclick="changeTo(1)"></a> 
+                <a href="#"><img id="chatBtn" src="assets/message.svg" height="24px" width="24px"  onclick="changeTo(2)"></a>            
+           
+            </nav>
+            <nav id="secondNav">
+                <a href="#"><img id="homeBtn" src="assets/house.svg" height="24px" width="24px" onclick="changeTo(0)"></a>            
+                <a href="#"><img id="educationBtn" src="assets/graduation.svg" height="24px" width="24px"  onclick="changeTo(1)"></a> 
+           
+            </nav>
+           <!--<div class="fab">+</div>--> 
+        </footer>
+    </body>
+    <script>
+        var homeView = document.getElementById('homeView');
+        var educationView = document.getElementById('educationView')
+        var chatView = document.getElementById("chatView")
+
+        let views = [homeView, educationView, chatView]
+        function changeTo(destination)
+        {
+            views.forEach((view, index) => {
+                if (index === destination) {
+                    view.style.display = 'inline';
+                } else {
+                    view.style.display = 'none';
+                }
+            });
+            selectedBtn(destination)
+        }
+
+        function selectedBtn(destination)
+        {
+            let homeBtn = document.getElementById("homeBtn")
+            let educationBtn = document.getElementById("educationBtn")
+            let chatBtn = document.getElementById("chatBtn")
+
+            homeBtn.src = "assets/house.svg"
+            educationBtn.src = "assets/graduation.svg"
+            chatBtn.src = "assets/info.png"
+            
+            switch (destination){
+                case 0:
+                    homeBtn.src = "assets/house_b.svg"
+                    break
+                case 1:
+                    educationBtn.src = "assets/graduation_b.svg"
+                    break
+                case 2:
+                    chatBtn.src = "assets/info_b.png"
+                    break
+            }
+        }
+        changeTo(0)
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+        import { getAuth, signOut ,signInWithEmailAndPassword,createUserWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAw_s-SsnRQp44GoR7_PZjzocHCTaansfY",
+            authDomain: "tech-mastery-academy.firebaseapp.com",
+            projectId: "tech-mastery-academy",
+            storageBucket: "tech-mastery-academy.firebasestorage.app",
+            messagingSenderId: "205345673412",
+            appId: "1:205345673412:web:d8970165489c414745b991",
+            measurementId: "G-KLKCTD047P"
+        };
+
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app)
+        const db = getFirestore(app);
+
+       
+        async function getAccount(userId) {
+            const docRef = doc(db, "users", userId);
+
+            let firstNav = document.getElementById("firstNav")
+            let secondNav = document.getElementById("secondNav")
+
+            try {
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists()) 
+                {
+                    const docData = docSnap.data();
+                    if(docData.accessLevel < 2)
+                    {
+                        firstNav.style.display = 'none'
+                        secondNav.style.display = 'flex'
+                    }else{
+                        firstNav.style.display = 'flex'
+                        secondNav.style.display = 'none'
+                    }
+                } else {
+                    alert("No document found with the given ID");
+                  
+                }
+            } catch (error) {
+                console.error("Error fetching document:", error);
+                alert("There was an error fetching the document.");
+            }
+        }
+        
+
+        window.onload = function() 
+        {
+            const userUID = localStorage.getItem('userUID');
+            getAccount(userUID)
+        }
+
+      
+    </script>
+</html>
